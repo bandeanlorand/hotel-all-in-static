@@ -364,7 +364,7 @@ footer {
 
 footer .container {
     max-width: 100%;
-    padding: 30px 20px;
+    padding: 30px 30px 60px 30px;
     position: relative;
 }
 
@@ -444,7 +444,9 @@ footer ul.menu {
     margin: 0;
 }
 
-footer ul.menu li {}
+footer ul.menu li {
+    padding-bottom: 8px;
+}
 
 footer ul.menu li a {
     color: #fff;
@@ -572,7 +574,7 @@ footer aside {
     }
 
     footer ul.menu li {
-        margin-bottom: 7px;
+        margin-bottom: 0px;
     }
 }
 
