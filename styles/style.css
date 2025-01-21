@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #fff;
     font-family: "Tienne", serif;
+    transition: none;
 }
 
 @font-face {
@@ -18,11 +19,11 @@ body {
 
 header {
     padding: 0 10px;
-    max-height: 60px
+    /* max-height: 60px */
 }
 
 header nav.navbar {
-    max-height: 60px;
+    /* max-height: 60px; */
     padding: 0px 10px;
 }
 
@@ -37,8 +38,8 @@ header .logo img {
     width: auto;
 }
 
-.mrs-eaves-roman-regular {
-    font-family: "MrsEavesRoman Regular";
+.container {
+    max-width: 1240px;
 }
 
 
@@ -145,7 +146,7 @@ header .logo img {
     margin-top: 57px;
     border: 0;
     opacity: 0;
-    transition: all ease-in-out 0s, opacity linear 0.2s; 
+    transition: all ease-in-out 0s, opacity linear 0.2s;
 
 }
 
@@ -156,7 +157,7 @@ header .logo img {
 
 .navbar-collapse.offcanvas.show {
     opacity: 1;
-    
+
 }
 
 .navbar-collapse.offcanvas.hiding {
@@ -179,8 +180,9 @@ header .logo img {
     font-size: 19px;
     line-height: 24.7px;
 }
-.navbar-collapse .nav-item a:hover{
-    color:#080808;
+
+.navbar-collapse .nav-item a:hover {
+    color: #080808;
 }
 
 .navbar-collapse .nav-item.d-flex {
@@ -375,15 +377,15 @@ footer .logo img {
     max-width: 308px;
 }
 
-footer:before{
+footer:before {
     content: '';
     background-image: url('../images/bg-footer.png');
     width: 206px;
     height: 212px;
     display: block;
     position: absolute;
-    top:-212px;
-    right:0px
+    top: -212px;
+    right: 0px
 }
 
 footer .d-flex a.header-social-icon {
@@ -399,7 +401,7 @@ footer .d-flex a.header-social-icon svg {
     fill: #fff;
     width: 30px;
     height: 30px;
-    
+
 }
 
 footer .scroll-up {
@@ -413,34 +415,36 @@ footer .scroll-up {
     font-weight: 300;
     position: absolute;
     right: 20px;
-    bottom:120px;
+    bottom: 120px;
 }
+
 footer .scroll-up span {
     transform: rotate(90deg);
     font-size: 11px;
     height: 20px;
     line-height: 20px;
     position: absolute;
-    right:-12px;
-    bottom:0;
+    right: -12px;
+    bottom: 0;
 }
+
 footer .scroll-up img {
     animation-duration: 2s;
     transition-duration: 0.31s;
     animation: scrollUp 2s infinite;
-    width:11px;
+    width: 11px;
     height: auto;
 }
 
-footer ul.menu{
+footer ul.menu {
     list-style: none;
     padding: 0px 0 0 0;
     margin: 0;
 }
-footer ul.menu li{
 
-}
-footer ul.menu li a{
+footer ul.menu li {}
+
+footer ul.menu li a {
     color: #fff;
     font-size: 16px;
     line-height: 24px;
@@ -448,30 +452,32 @@ footer ul.menu li a{
     margin-bottom: 5px;
     transition: ease all 0.5s;
 }
-footer ul.menu li a.arrow{
+
+footer ul.menu li a.arrow {
     color: #fff;
     text-transform: uppercase;
     display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: flex-start;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-footer ul.menu li a:hover{
+footer ul.menu li a:hover {
     padding-left: 20px;
 }
 
-footer ul.menu li a.arrow:before{
+footer ul.menu li a.arrow:before {
     content: '';
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8.73" height="8.022" viewBox="0 0 8.73 8.022"><g transform="translate(0.172 0.447)"><line x2="8.198" y2="4.099" transform="translate(0.137)" fill="none" stroke="%23fff" stroke-width="1"></line><line y1="3.006" x2="8.198" transform="translate(0 4.099)" fill="none" stroke="%23fff" stroke-width="1"></line></g></svg>');
     background-repeat: no-repeat;
     background-size: cover;
-    width:10px;
+    width: 10px;
     height: 10px;
     display: block;
     margin-right: 10px;
 }
-footer aside{
+
+footer aside {
     background-color: #fff;
     padding: 10px 20px;
     color: #000000;
@@ -501,9 +507,7 @@ footer aside{
     }
 }
 
-@media (min-width: 576px) {
- 
-}
+@media (min-width: 576px) {}
 
 @media (min-width: 768px) {
     footer .container {
@@ -517,7 +521,7 @@ footer aside{
 
     footer .scroll-up {
         flex-direction: row-reverse;
-        align-items:center;
+        align-items: center;
         align-self: flex-end;
         display: flex;
         margin-left: auto;
@@ -531,6 +535,7 @@ footer aside{
         top: calc(50% - 70px);
         bottom: unset;
     }
+
     footer .scroll-up span {
         transform: rotate(0deg);
         font-size: 17px;
@@ -538,37 +543,57 @@ footer aside{
         line-height: 20px;
         position: relative;
         right: unset;
-    bottom: unset;
-    margin-right: 60px;
+        bottom: unset;
+        margin-right: 60px;
     }
+
     footer .scroll-up img {
         width: 22px;
     }
-    footer .logo{
+
+    footer .logo {
         margin-bottom: 0;
     }
+
     footer .d-flex a.header-social-icon {
-  
+
         display: flex;
     }
-    footer ul.menu{
+
+    footer ul.menu {
         list-style: none;
         padding: 40px 0 0 0;
     }
-    footer ul.menu.pt-lg-8{
+
+    footer ul.menu.pt-lg-8 {
         padding-top: 80px;
     }
-    footer ul.menu li{
+
+    footer ul.menu li {
         margin-bottom: 7px;
     }
 }
 
 /* footer styles ends here */
 
-.container-fluid.container-bg{
+.container-fluid.container-bg {
     background-image: url('../images/hotel-background-2-2.png');
     min-height: 100vh;
     background-position: top center;
     background-size: 100% auto;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+.example {
+    position: relative;
+}
+
+.example .container {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    color: #fff;
+    font-size: 20px;
 }
