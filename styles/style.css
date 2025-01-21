@@ -253,10 +253,7 @@ header .logo img {
     }
 
     .navbar-collapse .nav-item a:not(.header-reserve-btn):not(.header-social-icon).active {
-        /* nav-link */
         color: #806D60;
-
-
     }
 
     .navbar-collapse .nav-item a:not(.header-reserve-btn):not(.header-social-icon).active::after,
@@ -323,12 +320,17 @@ header .logo img {
         font-weight: 400;
         color: #fff;
         font-size: 15px;
-        line-height:
-            15px;
+        line-height:15px;
         border-radius: 10px 10px 10px 10px;
         margin: 0px 12px 0px 24px;
+        transition: all 0.2s;
 
+        &:hover{
+            opacity: 0.95;
+            color: rgba(255, 255, 255, 0.9);
+        }
     }
+    
 }
 
 @media (min-width: 1200px) {
